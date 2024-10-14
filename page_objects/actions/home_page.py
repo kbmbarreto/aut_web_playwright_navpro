@@ -13,19 +13,19 @@ class HomePage:
         return self.page.is_visible(f"text={HomeLocators.TXT_TITLE}")
 
     def btn_exames_is_visible(self) -> bool:
-        return self.page.is_visible(f"text={HomeLocators.LNK_EXAMES}")
+        return self.page.is_visible(HomeLocators.LNK_EXAMES)
 
     def btn_pacientes_is_visible(self) -> bool:
-        return self.page.is_visible(f"text={HomeLocators.LNK_PACIENTES}")
+        return self.page.is_visible(HomeLocators.LNK_PACIENTES)
 
     def btn_faq_is_visible(self) -> bool:
-        return self.page.is_visible(f"text={HomeLocators.LNK_FAQ}")
+        return self.page.is_visible(HomeLocators.LNK_FAQ)
 
     def btn_entrar_is_visible(self) -> bool:
-        return self.page.is_visible(f"text={HomeLocators.BTN_ENTRAR}")
+        return self.page.is_visible(HomeLocators.BTN_ENTRAR)
 
     def btn_cadastre_se_is_visible(self) -> bool:
-        return self.page.is_visible(f"text={HomeLocators.BTN_CADASTRE_SE}")
+        return self.page.is_visible(HomeLocators.BTN_CADASTRE_SE)
 
     def btn_quero_me_cadastrar_is_visible(self) -> bool:
         return self.page.is_visible(f"text={HomeLocators.BTN_QUERO_ME_CADASTRAR}")
