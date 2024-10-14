@@ -12,9 +12,9 @@
 ## Execução
 Para executar, execute o comando do Pytest na raiz do projeto:
 
-`pytest`: Este comando irá executar todos os testes do projeto.
-`pytest -v`: Este comando irá executar os testes exibindo mais detalhes no console.
-`pytest --html=report.html`: Com este comando podemos rodar os testes e gerar um relatório.
+<br>`pytest`: Este comando irá executar todos os testes do projeto.
+<br>`pytest -v`: Este comando irá executar os testes exibindo mais detalhes no console.
+<br>`pytest --html=report.html`: Com este comando podemos rodar os testes e gerar um relatório.
 
 
 ### O projeto ainda está em constantes melhorias, sendo atualizado a cada alteração.
