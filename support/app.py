@@ -1,6 +1,5 @@
 from playwright.sync_api import sync_playwright
 
-
 with sync_playwright() as playwright:
     # Lauch a browser
     browser = playwright.chromium.launch(headless=False, slow_mo=500)
@@ -14,7 +13,7 @@ with sync_playwright() as playwright:
     exames_button = page.get_by_role('link', name="Exames")
     exames_button.click()
 
-    #Get the url
+    # Get the url
     print("Exames:", page.url)
 
     browser.close()
