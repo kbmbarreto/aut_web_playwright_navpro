@@ -10,6 +10,7 @@ with sync_playwright() as playwright:
     page.goto("https://navpro.dasa.com.br")
 
     # Locate a link element with "Entrar" text
+    titulo_text = page.get_by_text('A plataforma para gestão de exames ')
     exames_button = page.get_by_role('link', name="Exames")
     exames_button.click()
 
