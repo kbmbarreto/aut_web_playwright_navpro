@@ -2,5 +2,6 @@
 .idea
 allure-reports
 allure-results
+assets
 __pycache__
 report.html
