@@ -8,13 +8,26 @@
 - Playwright 1.47.0
 - Pytest 8.3.3
 - Pytest Html 4.1.1
+- Allure Report 2.13.5
 
 ## Execução
-Para executar, execute o comando do Pytest na raiz do projeto:
+Para executar, utilize o comando do Pytest na raiz do projeto:
 
-<br>`pytest`: Este comando irá executar todos os testes do projeto.
-<br>`pytest -v`: Este comando irá executar os testes exibindo mais detalhes no console.
-<br>`pytest --html=report.html`: Com este comando podemos rodar os testes e gerar um relatório.
+<br>`pytest` -> executa todos os testes do projeto;
+<br>`pytest -v` -> executa os testes exibindo mais detalhes no console;
+<br>`pytest -v` -> executa os testes exibindo mais detalhes no console;
+
+<br>`pytest --cache-clear` -> limpa o cache do pytest.
+
+## Execução gerando relatórios
+Para executar utilizando o `pytest html`:
+
+<br>`pytest --html=report.html` -> executa os testes e gera o relatório em html.
+
+Para executar utilizando o `allure report`:
+
+<br>`pytest --alluredir=allure-results` -> executa os testes e gera o relatório;
+<br>`allure serve allure-results` -> gera o relatório do allure.
 
 
 ### O projeto ainda está em constantes melhorias, sendo atualizado a cada alteração.
