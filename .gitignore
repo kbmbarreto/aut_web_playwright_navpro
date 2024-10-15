@@ -1,4 +1,6 @@
 .venv
 .idea
-.__pycache__
+allure-reports
+allure-results
+__pycache__
 report.html

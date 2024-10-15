@@ -1,3 +1,4 @@
+import allure
 import pytest
 from page_objects.actions.home_page import HomePage
 
@@ -7,6 +8,8 @@ def navpro_page(page):
     return HomePage(page)
 
 
+@allure.feature("Home Page")
+@allure.story("Exibição de Componentes")
 def test_todos_os_componentes_devem_ser_exibidos(navpro_page):
     navpro_page.navigate_to_homepage()
     assert navpro_page.home_title_is_visible()
@@ -16,6 +19,8 @@ def test_todos_os_componentes_devem_ser_exibidos(navpro_page):
     assert navpro_page.btn_entrar_is_visible()
 
 
+@allure.feature("Home Page")
+@allure.story("Acesso à Página de Exames")
 def test_deve_acessar_o_nav_exames_com_sucesso(navpro_page):
     navpro_page.navigate_to_homepage()
     navpro_page.click_exames_link()
