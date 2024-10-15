@@ -1,4 +1,4 @@
-class HomeLocators:
+class LandingLocators:
     TXT_TITLE = "A plataforma para gestão de exames"
     LNK_EXAMES = 'a.header__nav-link:has-text("Exames")'
     LNK_PACIENTES = 'a.header__nav-link:has-text("Pacientes")'
