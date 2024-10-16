@@ -39,13 +39,16 @@ aut_web_playwright_navpro/
 ├── .venv/
 ├── page_objects/
 │   ├── actions/
-│   │   └── home_page.py
+│   │   ├── cadastro_page.py
+│   │   └── landing_page.py
 │   ├── elements/
-│   │   └── home_locators.py
+│   │   ├── cadastro_locators.py
+│   │   └── landing_locators.py
 ├── support/
 │   └── utils.py
 ├── tests/
-│   └── test_navpro.py
+│   ├── test_cadastro.py
+│   └── test_landing.py
 ├── .gitignore
 ├── conftest.py
 ├── README.md
